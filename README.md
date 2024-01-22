@@ -10,28 +10,28 @@ To run the application, you need to install this application :
 
 ## Installation
 - Clone the git project on your local:
-  ```
+  ```bash
     git clone https://github.com/DeveloperDel/gdsc-link-be.git
   ```
   
 - Go to the project directory directly:
-  ```
+  ```bash
     cd gdsc-link-be
   ```
   Note: Also, you need to make sure you're already open the docker desktop
   
 - Run this script to create the container in the docker:
-  ```
+  ```bash
     docker-compose -d up
   ```
 
 - Run the container:
-  ```
-  docker container start redis link-shortener-api
+  ```bash
+    docker container start redis link-shortener-api
   ```
   Note: To check if your container already started, you can check it in the docker desktop or just run this script in your prompt:
-  ```
-  docker container ls
+  ```bash
+    docker container ls
   ```
 - Finish, you can test the API in the postman to make sure it works properly. 
 
