@@ -44,7 +44,7 @@ public class UrlResourceController {
     @GetMapping("/links")
     public ResponseEntity<Object> getLinks(){
         Set<String> links = redisTemplate.keys("*");
-        return ResponseHandler.responseBuilder(HttpStatus.OK,false, "Links fetch successfully !",links);
+        return ResponseHandler.responseBuilder(HttpStatus.OK,false, "Links fetch successfully!",links);
     }
 
     // Not Used
